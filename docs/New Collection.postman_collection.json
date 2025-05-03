@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "bc05ea51-9fb8-4a17-b30b-c0a932a18ca3",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44622490",
+		"_collection_link": "https://sydney-7888027.postman.co/workspace/Sydney's-Workspace~f949e608-ee1c-4edc-85ac-974b95f1f73e/collection/44622490-bc05ea51-9fb8-4a17-b30b-c0a932a18ca3?action=share&source=collection_link&creator=44622490"
+	},
+	"item": [
+		{
+			"name": "http://localhost/Simple-Survey-Api/api/questions.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Simple-Survey-Api/api/responses.php\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Simple-Survey-Api",
+						"api",
+						"responses.php\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/Simple-Survey-Api/api/submit_response.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "Sydney Wesonga Walusala",
+							"description": "text",
+							"type": "text"
+						},
+						{
+							"key": "email_address",
+							"value": "wesongasydney2@gmail.com",
+							"description": "text",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "I am a fullstack developer",
+							"description": "text",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "MALE",
+							"description": "text",
+							"type": "text"
+						},
+						{
+							"key": "programming_stack",
+							"value": "PHP",
+							"description": "text",
+							"type": "text"
+						},
+						{
+							"key": "certificates",
+							"description": "file",
+							"type": "file",
+							"src": "postman-cloud:///1f0276fe-e329-41b0-9e25-ba8802b13c7a"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Simple-Survey-Api/api/submit_response.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Simple-Survey-Api",
+						"api",
+						"submit_response.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/Simple-Survey-Api/api/responses.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"info\": {\r\n    \"name\": \"Simple Survey API\",\r\n    \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"\r\n  },\r\n  \"item\": [\r\n    {\r\n      \"name\": \"Get Survey Responses\",\r\n      \"request\": {\r\n        \"method\": \"GET\",\r\n        \"header\": [],\r\n        \"url\": {\r\n          \"raw\": \"http://localhost/Simple-Survey-Api/api/responses.php\",\r\n          \"protocol\": \"http\",\r\n          \"host\": [\"localhost\"],\r\n          \"path\": [\"Simple-Survey-Api\", \"api\", \"responses.php\"]\r\n        }\r\n      },\r\n      \"response\": []\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Simple-Survey-Api/api/responses.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Simple-Survey-Api",
+						"api",
+						"responses.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
