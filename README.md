@@ -26,7 +26,7 @@ This is the backend for the Simple Survey Application built using PHP and MySQL.
 - Use the attached collection `postman_collection.json` to test the endpoints.
 
 ## ERD
-- Located in `/docs/ERD.png`
+- Located in `/docs/survey_erd.png`
 
 ## Endpoints
 - `POST /submit_response.php` - Submits survey response
